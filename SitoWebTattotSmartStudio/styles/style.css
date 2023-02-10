@@ -1,0 +1,322 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Unbounded', cursive;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0px 20px 6px 20px #909090;
+  }
+  
+nav li {
+    float: left;
+  }
+  
+nav li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 111px 60px;
+    text-decoration: none;
+  }
+  
+nav li a:hover {
+    background-color: #a3a3a3;
+    color: black;
+  }
+
+.actived{
+    background-color: rgb(255, 24, 24);
+    color: #ffffff;
+} 
+.logo{
+    margin: 0 100px;
+}
+.logo a{
+    margin: 20px 0;
+    padding: 0;
+}
+.logo a img{
+    max-width: 200px;
+}
+.menu-background{
+    margin-top: 10px;
+    
+  background-image: url("../images/tatoooo.jpeg");
+
+  filter: blur(6px);
+  -webkit-filter: blur(6px);
+
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.menu-text{
+    
+
+    border-radius: 10px;
+    position: absolute;
+    top: 600px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 75%;
+    padding: 100px;
+}
+
+.menu-text h1{
+    text-shadow: 2px 2px rgb(255, 0, 0);
+    font-size: 60px;
+    padding: 15px;
+    color:#ffffff;
+}
+.menu-text p{
+    font-weight: bold;
+    text-shadow: -1px 1px black;
+    margin-right: 300px;
+    margin-left: 200px;
+    color: #e4e4e4;
+}
+.menu-text a{
+    text-shadow: 1px 1px rgb(215, 215, 215);
+    margin-left: 800px; 
+    padding: 10px;
+    text-decoration: none;
+    background-color: #ffffff;
+    border-radius: 8px;
+    color: black;
+}
+.menu-text a:hover{
+    color: #ffffff;
+    background-color: red;
+    text-shadow: 1px 1px rgb(255, 61, 61);
+}
+
+.section{
+    margin: 10px 0;
+    background: #ffffff;
+    padding: 100px 0;
+}
+.section h1{
+    font-size: 40px;
+    text-shadow: 1px 1px black;
+    
+}
+.section p{
+    font-size: 20px;
+    
+}
+.contacts{
+
+    text-align: center;
+
+}
+.contacts h1{
+    margin: 0 400px;
+    padding: 30px;
+    border-bottom: 1px solid #000000;
+}
+.contacts a{
+    text-decoration: none;
+    color: #000000;
+}
+.contacts p{
+    padding: 10px;
+}
+
+.firstSection{
+    box-shadow: 0px -20px 11px 10px #111;
+}
+.firstSection h1{
+    padding: 50px;
+    padding-left: 100px;
+}
+.firstSection p{
+    margin-right: 500px;
+    padding: 50px;
+    padding: 0 200px;
+}
+.firstSection img{
+    padding: 10px;
+    box-shadow: 2px 2px 2px 2px rgb(135, 135, 135);
+    border-radius: 4px;
+    margin: -200px 0;
+    margin-left: 850px;
+    max-height: 350px;
+}
+.section-background{
+    margin-top: 10px;
+    box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, 0.514);
+background-image: url("../images/casacol.jpg");
+
+filter: blur(3px);
+-webkit-filter: blur(3px);
+
+height: 100%;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.section-text {
+    color: #111111;
+    text-shadow: 1px 1px rgb(232, 232, 232);
+    position: absolute;
+    top: 1900px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 75%;
+}
+.section-text h1{
+    font-size: 50px;
+    font-weight: 1000;
+    color: #111111;
+    margin-left: 500px;
+    padding: 30px;
+}
+.section-text p{
+    margin: 0 150px;
+    padding: 10px;
+}
+.thirdSection{
+    padding-top: 50;
+    padding-bottom: 200px;
+}
+.thirdSection h1{
+    padding: 50px;
+    padding-left: 100px;
+}
+.thirdSection p{
+    margin-right: 500px;
+    padding: 50px;
+    padding: 0 200px;
+}
+.thirdSection img{
+    padding: 10px;
+    box-shadow: -2px 2px 2px 2px rgb(135, 135, 135);
+    border-radius: 4px;
+    margin: -300px 0;
+    margin-left: 950px;
+    max-height: 500px;
+}
+footer{
+    background-color: #ebebeb;
+    box-shadow: 0px -1px 6px 10px #909090;
+    margin-top: 100px;
+}
+footer ul{
+    list-style-type: none;
+    margin: 0 100px;
+    padding: 0;
+    overflow: hidden;
+   
+    
+}
+footer li{
+    font-weight: bold;
+    text-shadow: -1px 1px black;
+    margin-left: 50px;
+    float: left;
+    display: block;
+    color: rgb(255, 0, 0);
+    padding: 40px;
+    text-decoration: none;
+}
+footer a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+footer a:hover{
+    color: red;
+}
+
+
+* {box-sizing:border-box}
+.gallery{
+    padding: 100px;
+}
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
