@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page | Smart Tattoo Studio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li  class="logo"><a href="../index.html"><img src="../images/logo.jpg" alt="logo"></a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="galleria.html" class="actived">Galleria</a></li>
+                <li><a href="chiSiamo.html">Chi siamo</a></li>
+                <li><a href="dove.html">Dove</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </nav>
+        <menu>
+            <div class="menu-background"></div>
+            <div class="menu-text">
+                <h1>Galleria:</h1>
+                <p>foto di tatuaggi eseguiti dal nostro robot...</p>
+            </div>
+        </menu>
+    </header>
+    <div class="gallery">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="../images/gato.jpg" style="width:100%;">
+            </div>
+        
+            <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="../images/sfigato.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="../images/questoeritornatonel100ac.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="../images/earrivatalageografiaqua.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="../images/vivisenzaunpaolinculp.jpg" style="width:100%">
+            </div>
+        
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        }
+    </script>
+    <footer>
+        <div class="grid">
+            <ul>
+                <li><a href="../index.html">Home</a> </li>
+                <li><a href="galleria.html">Galleria</a></li>
+                <li><a href="chiSiamo.html">Chi siamo</a></li>
+                <li><a href="dove.html">Dove trovarci</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
